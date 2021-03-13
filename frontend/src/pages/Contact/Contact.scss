@@ -1,0 +1,65 @@
+@import '../../assets/sass/base';
+$contact-background-image-screen-path: url('../../assets/images/pages/contact/look_left_1920px.jpg');
+$contact-background-image-portrait-path: url('../../assets/images/pages/contact/look_left_360px_portrait.jpg');
+
+// Webpage farewell
+.contact {
+  &-wrapper {
+    background-image: $contact-background-image-screen-path;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 93vh;
+    @include centerContent;
+  }
+
+  &__text-box {
+    width: 28em;
+    font-family: $font-family-OpenSans;
+    color: $font-color-white;
+    font-size: $font-size-p-contact;
+    line-height: 1.7em;
+    word-break: break-word;
+    text-align: center;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.418);
+  }
+
+  &__a--hover {
+    &:hover {
+      color: $font-color-page_contact-hover;
+    }
+  }
+}
+
+@include mobile {
+  .contact {
+    &-wrapper {
+      background-image: $contact-background-image-portrait-path;
+      height: 100vh;
+      justify-content: start;
+    }
+    &__text-box {
+      margin-top: 20vh;
+      width: 20em;
+      font-size: 1.3em;
+      line-height: 1.7em;
+    }
+  }
+}
+
+@include tablet {
+  .contact {
+    &-wrapper {
+      background-image: $contact-background-image-portrait-path;
+      background-position: center;
+      height: 100vh;
+      justify-content: start;
+    }
+    &__text-box {
+      margin-top: 20vh;
+      width: 20em;
+      font-size: 1.3em;
+      line-height: 1.7em;
+    }
+  }
+}

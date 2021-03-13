@@ -1,0 +1,87 @@
+@import '../../assets/sass/base';
+
+// Landing page
+.home {
+  // Introduction
+  &__introduction {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    font-size: $font-size-h2;
+    font-style: italic;
+  }
+
+  &__intro-article {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 45vw;
+    text-align: center;
+    line-height: 2.1em;
+  }
+
+  &__h2 {
+    margin: 1em 0;
+    font-size: $font-size-h2;
+  }
+
+  // Skillcards
+  &__skillCards-wrapper {
+    background-color: $background-color-primary;
+  }
+
+  // Projects
+  &__projects {
+    background-color: $background-color-primary;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2em;
+  }
+
+  &__projects-article {
+    display: flex;
+    justify-content: center;
+    background-color: $background-color-tertiary;
+  }
+
+  &__projects-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em 0;
+  }
+}
+
+/* ------------------ */
+/* MEDIA BREAKPOINTS */
+/* ------------------ */
+
+@include desktop-lg {
+  .home {
+    &__intro-article {
+      width: 60vw;
+    }
+  }
+}
+@include laptop {
+  .home {
+    &__intro-article {
+      width: 55vw;
+    }
+  }
+}
+@include tablet {
+  .home {
+    &__intro-article {
+      width: 60vw;
+    }
+  }
+}
+@include mobile {
+  .home {
+    &__intro-article {
+      width: 80vw;
+    }
+  }
+}

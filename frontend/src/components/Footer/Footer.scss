@@ -1,0 +1,30 @@
+@import '../../assets/sass/base';
+
+// Footer webpage
+.footer {
+  background-color: $background-color-primary;
+  margin: 0;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-right: 2em;
+    font-weight: 400;
+    font-style: italic;
+    font-size: $font-size-li-footer;
+  }
+
+  &__icon {
+    width: 1.5em;
+  }
+}

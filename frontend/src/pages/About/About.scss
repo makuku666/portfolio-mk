@@ -1,0 +1,169 @@
+@import '../../assets/sass/base';
+$about-background-image-dive-path: url('../../assets/images/pages/about/coron_dive.JPG');
+$about-background-image-lamps-path: url('../../assets/images/pages/about/lamps.JPG');
+
+// Webpage aboutMe
+.aboutMe-wrapper {
+  background-color: $background-color-primary;
+  font-family: $font-family-LibreBaskerville;
+  line-height: 1.6em;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minimax(15em, auto);
+  grid-template-areas:
+    'hd hd hd hd hd hd'
+    'iB iB iB iB iT  iT'
+    'sT sT sR sR sR sR'
+    'img img cY cT cT cB';
+
+  // Image on top
+  .aboutMe {
+    &__h2 {
+      text-align: center;
+    }
+    &__p {
+      font-size: $font-size-p-aboutMe;
+    }
+
+    &__head-image {
+      grid-area: hd;
+      background-image: $about-background-image-lamps-path;
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0 0 1em 0;
+    }
+
+    // Introduction Me
+    &__intro {
+      &--box-blue {
+        grid-area: iB;
+        background-color: $background-color-page_aboutMe-box1;
+        margin: 0 1em 0 0;
+      }
+      &-text-box {
+        grid-area: iT;
+        background: $background-color-tertiary;
+        @include centerContent;
+        padding: 1em 0;
+        p {
+          width: 70%;
+        }
+      }
+    }
+
+    // My leisure
+    &__leisure {
+      &-text-box {
+        grid-area: sT;
+        background: $background-color-tertiary;
+        @include centerContent;
+        margin: 1em 0 1em 0;
+        padding: 1em 0;
+        p {
+          width: 70%;
+        }
+      }
+      &--box-red {
+        grid-area: sR;
+        background-color: $background-color-page_aboutMe-box2;
+        margin: 1em 0 1em 1em;
+      }
+    }
+
+    &__dive-wrapper {
+      grid-area: img;
+      position: relative;
+      background-image: $about-background-image-dive-path;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      background-position: center;
+      &__dive-wrapper--overlay {
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $background-color-page_aboutMe-overlay;
+      }
+    }
+
+    // My career
+    &__career {
+      &--box-yellow {
+        grid-area: cY;
+        background-color: $background-color-page_aboutMe-box3;
+        margin: 0 1em 0 1em;
+      }
+
+      &-text-box {
+        grid-area: cT;
+        background: $background-color-tertiary;
+        @include centerContent;
+        padding: 1em 0;
+        h2 {
+          text-align: center;
+          line-height: 1.4em;
+        }
+        p {
+          width: 70%;
+        }
+      }
+
+      &--box-blue {
+        grid-area: cB;
+        background-color: $background-color-page_aboutMe-box1;
+        margin: 0 0 0 1em;
+      }
+    }
+  }
+
+  // *************************
+  // Media queries breakpoints
+  // *************************
+
+  @include mobile {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'hd hd hd'
+      'iB iT iT'
+      'iB iT iT'
+      'sT sT sR'
+      'sT sT sR'
+      'img img img'
+      'img img img'
+      'cY cY cY'
+      'cT cT cT'
+      'cB cB cB';
+    .aboutMe__career--box-yellow {
+      margin: 1em 0;
+    }
+    .aboutMe__career--box-blue {
+      margin: 1em 0;
+    }
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'hd hd hd'
+      'iB iT iT'
+      'sT sT sR'
+      'img img cY'
+      'img img cY'
+      'img img cY'
+      'cT cT cT'
+      'cB cB cB';
+    .aboutMe__career--box-yellow {
+      margin: 0 0 1em 1em;
+    }
+    .aboutMe__dive-wrapper {
+      margin: 0 0 1em 0;
+    }
+    .aboutMe__career--box-blue {
+      margin: 1em 0;
+    }
+  }
+}

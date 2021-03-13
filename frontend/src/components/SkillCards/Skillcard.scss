@@ -1,0 +1,98 @@
+@import '../../assets/sass/base';
+
+// Skill card wrapper and specific card properties
+.skillCard {
+  // Skill card wrapper
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 1em;
+    width: 15em;
+    height: 22em;
+    padding-top: 2em;
+    margin: 3em;
+    background-color: $background-color-secondary;
+    box-shadow: 0px 0px 20px $font-color-silver;
+
+    // transition box-shadow
+    @include transDuration;
+
+    &:hover {
+      .skillCard {
+        &__item {
+          color: $font-color-white;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    color: $font-color-dark;
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0;
+  }
+
+  &__h2 {
+    font-weight: 400;
+    margin: 1em 0;
+  }
+
+  &__list {
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    text-transform: none;
+    color: $font-color-silver;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 2.5em;
+    letter-spacing: 0.15em;
+  }
+
+  // Specific card properties
+  &__frontend {
+    @include skillCardAndScale($font-color-page_start-frontend);
+  }
+  &__backend {
+    @include skillCardAndRotate($font-color-page_start-backend);
+  }
+  &__database {
+    @include skillCardAndScale($font-color-page_start-database);
+  }
+  &__deployment {
+    @include skillCardAndRotate($font-color-page_start-deployment);
+  }
+}
+
+// Icon transitions
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(1.1, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.2, 1.2);
+  }
+  75% {
+    -webkit-transform: scale(1.1, 1.1);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+  }
+}

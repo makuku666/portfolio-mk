@@ -1,0 +1,92 @@
+@import '../../assets/sass/base';
+
+// Homepage header
+.header {
+  background-color: $background-color-primary;
+  padding: 0 0 2em 0;
+  color: $font-color-white;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.9em;
+  }
+
+  &__flip-wrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 9vw 0 10vw;
+    cursor: pointer;
+  }
+
+  &__jobTitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: $font-color-gold;
+    justify-content: center;
+  }
+
+  &__h1 {
+    font-size: 3.5em;
+    width: 9em;
+    display: flex;
+    flex: row, wrap;
+  }
+
+  &__h2 {
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+
+/* ------------------ */
+/* MEDIA BREAKPOINTS */
+/* ------------------ */
+
+@include tablet {
+  .header {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__h1 {
+      width: 8m;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      text-align: center;
+    }
+
+    &__flip-wrapper {
+      margin: 2em 0 2em 0;
+    }
+  }
+}
+
+@include mobile {
+  .header {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      text-align: center;
+      justify-content: center;
+    }
+
+    &__flip-wrapper {
+      margin: 2em 0 2em 0;
+    }
+  }
+}

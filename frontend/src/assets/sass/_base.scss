@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,300;0,400;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+@import './reset';
+@import './mixins';
+
+// Breakpoints media devices: max sizes
+$mobile: 425px; //360 small mobile
+$tablet: 768px;
+$laptop: 1240px;
+$desktop-lg: 1800px;
+
+// Define background colors
+$background-color-primary: #313638;
+$background-color-secondary: rgb(74, 77, 74);
+$background-color-tertiary: #fff;
+
+// Define Font colors
+$font-color-gold: #f4d115;
+$font-color-dark: #313638;
+$font-color-silver: rgb(145, 145, 145);
+$font-color-white: #ffffff;
+
+// Special colors of application
+//  Page: Start
+$font-color-page_start-frontend: rgb(6, 196, 6);
+$font-color-page_start-backend: rgb(2, 130, 180);
+$font-color-page_start-database: $font-color-gold;
+$font-color-page_start-deployment: magenta;
+$font-color-page_start-projects: rgb(212, 149, 31);
+//  Page: Playground > User cards
+$background-color-userCard_mask-male: #89c6ff;
+$background-color-userCard_mask-female: #ff89ff;
+$background-color-userCard_img-border: grey;
+$background-color-userCard_divider-stroke: lightgrey;
+//  Page: AboutMe
+$background-color-page_aboutMe-box1: rgb(13, 50, 151);
+$background-color-page_aboutMe-box2: rgb(255, 17, 0);
+$background-color-page_aboutMe-box3: rgb(255, 230, 0);
+$background-color-page_aboutMe-overlay: rgba(0, 0, 0, 0.5);
+//  Page: Contact
+$font-color-page_contact-hover: lightskyblue;
+
+// Font families
+$font-family-Tomorrow: 'Tomorrow', sans-serif;
+$font-family-LibreBaskerville: 'Libre Baskerville', sans-serif;
+$font-family-OpenSans: 'Open Sans', sans-serif;
+
+// Define font sizes
+$font-size-test: 16px;
+$font-size-h1: 3.5rem;
+$font-size-h2: 1.5em;
+$font-size-h3: 1.2em;
+$font-size-li: 1em;
+$font-size-li-nav__mobile: 1.8em;
+$font-size-li-footer: 1.2em;
+$font-size-p: 1em;
+$font-size-p-aboutMe: 1.2em;
+$font-size-p-contact: 1.7em;
+
+// Define length
+$border-radius: 0.2em;
+$border-radius-navbar: 0.9em;
+$height-navbar: 4em;
+
+// Define size of user components
+$imageFlip-height: 12em;
+$imageFlip-width: 12em;
+
+body {
+  margin: 0;
+  font-family: $font-family-Tomorrow;
+  display: block;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+  margin: 0;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+p {
+  font-size: $font-size-p;
+}
+li {
+  font-size: $font-size-li;
+}
+
+a:active,
+a:visited,
+a:link {
+  color: $font-color-white;
+  text-decoration: none;
+}
+
+/* ------------------ */
+/* MEDIA BREAKPOINTS */
+/* ------------------ */
+@media screen and (min-width: 1920px) {
+  :root {
+    $font-size-test: 18px;
+  }
+}
+
+@media screen and (max-width: 850px) and (min-width: 401px) {
+  :root {
+    $font-size-test: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  :root {
+    $font-size-test: 11px;
+  }
+}
