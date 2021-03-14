@@ -44,18 +44,18 @@ export const myProjects = [
     },
     link: '',
   },
-  {
-    // Endless Candle
-    name: 'Endless candle',
-    description:
-      'Excercise about React basic hooks\n This candle is a bit modified by me. Now she can burn forever 😁',
-    stack: ['React', 'Netlify'],
-    images: {
-      carousel: false,
-      src: ['projects/endlessCandle.PNG'],
-    },
-    link: 'https://mks-endless-candle.netlify.app/',
-  },
+  // {
+  //   // Endless Candle
+  //   name: 'Endless candle',
+  //   description:
+  //     'Excercise about React basic hooks\n This candle is a bit modified by me. Now she can burn forever 😁',
+  //   stack: ['React', 'Netlify'],
+  //   images: {
+  //     carousel: false,
+  //     src: ['projects/endlessCandle.PNG'],
+  //   },
+  //   link: 'https://mks-endless-candle.netlify.app/',
+  // },
   {
     // Hackernews clone
     name: 'H4ck3rn3ws Clon3',
