@@ -9,7 +9,7 @@ $about-background-image-lamps-path: url('../../assets/images/pages/about/lamps.J
   line-height: 1.6em;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: minimax(15em, auto);
+  grid-auto-rows: minmax(15em, auto);
   grid-template-areas:
     'hd hd hd hd hd hd'
     'iB iB iB iB iT  iT'
@@ -126,6 +126,7 @@ $about-background-image-lamps-path: url('../../assets/images/pages/about/lamps.J
 
   @include mobile {
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(15em, auto);
     grid-template-areas:
       'hd hd hd'
       'iB iT iT'
@@ -137,16 +138,23 @@ $about-background-image-lamps-path: url('../../assets/images/pages/about/lamps.J
       'cY cY cY'
       'cT cT cT'
       'cB cB cB';
-    .aboutMe__career--box-yellow {
-      margin: 1em 0;
-    }
-    .aboutMe__career--box-blue {
-      margin: 1em 0;
+
+    .aboutMe {
+      &__dive-wrapper {
+        height: 50em;
+      }
+      &__career--box-yellow {
+        margin: 1em 0;
+      }
+      &__career--box-blue {
+        margin: 1em 0;
+      }
     }
   }
 
   @include tablet {
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(15em, auto);
     grid-template-areas:
       'hd hd hd'
       'iB iT iT'
@@ -156,14 +164,17 @@ $about-background-image-lamps-path: url('../../assets/images/pages/about/lamps.J
       'img img cY'
       'cT cT cT'
       'cB cB cB';
-    .aboutMe__career--box-yellow {
-      margin: 0 0 1em 1em;
-    }
-    .aboutMe__dive-wrapper {
-      margin: 0 0 1em 0;
-    }
-    .aboutMe__career--box-blue {
-      margin: 1em 0;
+
+    .aboutMe {
+      &__dive-wrapper {
+        margin: 0 0 1em 0;
+      }
+      &__career--box-yellow {
+        margin: 0 0 1em 1em;
+      }
+      &__career--box-blue {
+        margin: 1em 0;
+      }
     }
   }
 }
