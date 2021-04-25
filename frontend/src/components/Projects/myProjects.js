@@ -18,7 +18,7 @@ export const myProjects = [
       carousel: false,
       src: ['projects/mern-redux-demo-shop.png'],
     },
-    link: 'https://mern-redux-shop.herokuapp.com/.app/',
+    link: 'https://mern-redux-shop.herokuapp.com/',
   },
   {
     // Random User Stage
