@@ -1,6 +1,26 @@
 // List of all user projects
 export const myProjects = [
   {
+    // MERN-Redux Demo Shop
+    name: 'MERN-Redux Demo Shop',
+    description:
+      'This is a simple shop demo which is using Redux for global state management. \nPlanned upcoming feature: Normal and Google Login',
+    stack: [
+      'React',
+      'Redux',
+      'HTML5/Scss',
+      'Express',
+      'MongoDb',
+      'Heroku',
+      'external API',
+    ],
+    images: {
+      carousel: false,
+      src: ['projects/mern-redux-demo-shop.png'],
+    },
+    link: 'https://mern-redux-shop.herokuapp.com/.app/',
+  },
+  {
     // Random User Stage
     name: 'Random User Stage',
     description:
@@ -33,7 +53,6 @@ export const myProjects = [
       'React',
       'HTML5/CSS3/Sass',
       'Material UI',
-      'Netlify',
       'Express',
       'Postgre SQL',
       'Heroku',
