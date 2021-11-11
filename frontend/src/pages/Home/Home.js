@@ -10,13 +10,15 @@ const Home = () => {
       <Header />
       <section className='home__section home__introduction'>
         <div className='home__intro-article'>
-          <h2 className='home__h2'>Hi, glad seeing you here!</h2>
+          <h2 className='home__h2'>{`Hi, glad seeing you here!`}</h2>
           <p className='home__p'>
-            I underwent a change in my life from a test engineer to a web
-            developer. Now I{"'"}m turning to become a full stack developer
-            focused on the front-end. Creating awesome websites with React, that
-            provide visitors with unique experiences that will make them want to
-            return, is what I like doing.
+            {`I'm a test engineer & web developer and this combination is pretty
+            cool. With LabView I can establish a communication with actuators
+            via interfaces like LIN and CAN bus close to the hardware. I can
+            read back their data and persist it in a database. With the help of
+            Node.js and React.js, I can build high-performance web applications,
+            process the persistent data and then make it available worldwide.
+            It's fascinating how hardware and software can merge. `}
           </p>
         </div>
       </section>
@@ -25,7 +27,7 @@ const Home = () => {
       </section>
       <section className='home__section home__projects'>
         <div className='home__projects-article'>
-          <h2 className='home__h2'>Projects</h2>
+          <h2 className='home__h2'>{`Projects`}</h2>
         </div>
         <div className='home__projects-wrapper'>
           <ProjectsContainer />
