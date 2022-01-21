@@ -4,7 +4,7 @@ export const myProjects = [
     // MERN-Redux Demo Shop
     name: 'MERN-Redux Demo Shop',
     description:
-      'This is a simple shop demo which is using Redux for global state management. \nPlanned upcoming feature: Normal and Google Login',
+      'Simple shop demo which is using Redux for global state management.',
     stack: [
       'React',
       'Redux',
@@ -36,7 +36,7 @@ export const myProjects = [
     // Where Am I?
     name: 'Where Am I?',
     description:
-      'Load this page, enable browser localization(GPS) and see your position on the map. Additionally you will get some country information.',
+      'Find your position on the world map and get local information of your place.',
     stack: ['React', 'HTML5/CSS3', 'Netlify', 'MapBox', ' external APIs'],
     images: {
       carousel: false,
@@ -75,16 +75,16 @@ export const myProjects = [
   //   },
   //   link: 'https://mks-endless-candle.netlify.app/',
   // },
-  {
-    // Hackernews clone
-    name: 'H4ck3rn3ws Clon3',
-    description:
-      'Group project, establish interaction with the Hacker News API and display results.',
-    stack: ['React', 'Bootstrap', ' external API'],
-    images: {
-      carousel: false,
-      src: ['projects/HackernewsClone.PNG'],
-    },
-    link: 'https://h4ck3rn3ws-clon3.netlify.app/',
-  },
+  //   {
+  //     // Hackernews clone
+  //     name: 'H4ck3rn3ws Clon3',
+  //     description:
+  //       'Group project, establish interaction with the Hacker News API and display results.',
+  //     stack: ['React', 'Bootstrap', ' external API'],
+  //     images: {
+  //       carousel: false,
+  //       src: ['projects/HackernewsClone.PNG'],
+  //     },
+  //     link: 'https://h4ck3rn3ws-clon3.netlify.app/',
+  //   },
 ]
