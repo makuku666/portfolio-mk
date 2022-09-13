@@ -12,13 +12,14 @@ const Home = () => {
         <div className='home__intro-article'>
           <h2 className='home__h2'>{`Hi, glad seeing you here!`}</h2>
           <p className='home__p'>
-            {`I'm a test engineer & web developer and this combination is pretty
-            cool. With LabView I can establish a communication with actuators
-            via interfaces like LIN and CAN bus close to the hardware. I can
-            read back their data and persist it in a database. With the help of
-            Node.js and React.js, I can build high-performance web applications,
-            process the persistent data and then make it available worldwide.
-            It's fascinating how hardware and software can merge. `}
+            {`I'm a passionate web developer & solution oriented test engineer
+            from automotive sector. My passion for programming started lately,
+            but I'm on to learn more of modern web technologies.            
+            I like to
+            depict hardware process on high-performance web applications and
+            then make it available worldwide. It's fascinating how hardware and
+            software can merge.
+            `}
           </p>
         </div>
       </section>
