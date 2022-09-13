@@ -6,11 +6,11 @@ export const myProjects = [
     description:
       'Simple shop demo which is using Redux for global state management.',
     stack: [
-      'React',
+      'JS | React',
       'Redux',
-      'HTML5/Scss',
-      'Express',
-      'MongoDb',
+      'SCSS/SASS',
+      'Node | Express',
+      'Mongoose | MongoDb',
       'Heroku',
       'external API',
     ],
@@ -25,7 +25,7 @@ export const myProjects = [
     name: 'Random User Stage',
     description:
       'Fetch random user entities from external API and display them as list.',
-    stack: ['React', 'HTML5/Scss', 'Netlify', 'external API'],
+    stack: ['JS | React', 'SCSS/SASS', 'Netlify', 'external API'],
     images: {
       carousel: false,
       src: ['projects/RandomUserStage.png'],
@@ -37,7 +37,13 @@ export const myProjects = [
     name: 'Where Am I?',
     description:
       'Find your position on the world map and get local information of your place.',
-    stack: ['React', 'HTML5/CSS3', 'Netlify', 'MapBox', ' external APIs'],
+    stack: [
+      'TypeScript | React',
+      'SCSS/SASS',
+      'Netlify',
+      'MapBox',
+      ' external APIs',
+    ],
     images: {
       carousel: false,
       src: ['projects/WhereAmI.png'],
@@ -47,15 +53,18 @@ export const myProjects = [
   {
     // "SIWEPP"
     name: 'SIWEPP (in progress)',
-    description:
-      "SImple WEb based resource Planning for Projects\n It's a universal micro management system, on a calendar timeline basis, for managing existing resources.\nWatch daily project progress related by resources (eg. equipment) and save money for upcoming projects due to detailed planning properties.",
+    description: `SImple WEb based resource Planning for Projects 
+      A universal micro management system, on a calendar timeline basis, for managing existing resources.
+      
+      Watch daily project progress related by resources and save money for upcoming projects due to detailed planning properties.`,
     stack: [
-      'React',
-      'HTML5/CSS3/Sass',
-      'Material UI',
-      'Express',
+      'Redwood.js',
+      'JS | React',
+      'Chakra UI',
+      'Storybook & Jest',
+      'Apollo | GraphQL',
+      'Node | Express',
       'Postgre SQL',
-      'Heroku',
     ],
     images: {
       carousel: true,
@@ -63,28 +72,4 @@ export const myProjects = [
     },
     link: '',
   },
-  // {
-  //   // Endless Candle
-  //   name: 'Endless candle',
-  //   description:
-  //     'Excercise about React basic hooks\n This candle is a bit modified by me. Now she can burn forever 😁',
-  //   stack: ['React', 'Netlify'],
-  //   images: {
-  //     carousel: false,
-  //     src: ['projects/endlessCandle.PNG'],
-  //   },
-  //   link: 'https://mks-endless-candle.netlify.app/',
-  // },
-  //   {
-  //     // Hackernews clone
-  //     name: 'H4ck3rn3ws Clon3',
-  //     description:
-  //       'Group project, establish interaction with the Hacker News API and display results.',
-  //     stack: ['React', 'Bootstrap', ' external API'],
-  //     images: {
-  //       carousel: false,
-  //       src: ['projects/HackernewsClone.PNG'],
-  //     },
-  //     link: 'https://h4ck3rn3ws-clon3.netlify.app/',
-  //   },
 ]

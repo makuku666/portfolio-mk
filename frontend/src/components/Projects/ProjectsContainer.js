@@ -37,7 +37,7 @@ const ProjectsContainer = () => {
                   </p>
                 ))}
               </>
-              <p className='project__p project__tech'>{stack.join(' | ')}</p>
+              <p className='project__p project__tech'>{stack.join(' - ')}</p>
 
               {/* Don't render link if no link available */}
               {link.length === 0 ? (
