@@ -22,7 +22,7 @@ const Footer = () => {
           <img className='footer__icon' src={IconGit} alt='logo'></img>
           <a
             className='footer__a'
-            href='https://github.com/makuku666'
+            href='https://github.com/marcus-koch-fs-dev'
             target='_blank'
             rel='noopener noreferrer'
           >
